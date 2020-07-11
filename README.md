@@ -1,4 +1,4 @@
-# Honeybader
+# Honeybadger
 
 This is a [Honeybadger][] integration module for Drupal.
 
@@ -54,8 +54,8 @@ settings above.
 
 This project contains unit tests and code linters.
 
-PHPUnit: `composer phpunit`
-PHPCS: `composer phpcs`
+* PHPUnit: `composer phpunit`
+* PHPCS: `composer phpcs`
 
 ## Maintainers
 
