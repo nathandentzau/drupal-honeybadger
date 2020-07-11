@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ruleset name="Drupal">
+  <description>Drupal coding standards</description>
+
+  <!-- Directories to scan -->
+  <file>.</file>
+
+  <!-- Excluded patterns -->
+  <exclude-pattern>./tests/*</exclude-pattern>
+  <exclude-pattern>./vendor/*</exclude-pattern>
+
+  <!-- Set ignore extensions. -->
+  <!-- @see https://www.drupal.org/node/2867601#comment-12075633 -->
+  <arg name="ignore" value="*.css,*.info,*.js,*.md,*.txt"/>
+
+  <!-- PHPCS argument overrides -->
+  <arg name="colors" />
+
+  <!-- Show progress. -->
+  <arg value="p" />
+
+  <!-- PHP configuration overrides -->
+  <ini name="memory_limit" value="-1" />
+
+  <!-- Project autoloader -->
+  <autoload>vendor/autoload.php</autoload>
+
+  <!-- Project rulesets -->
+  <rule ref="Drupal"/>
+  <rule ref="DrupalPractice"/>
+</ruleset>

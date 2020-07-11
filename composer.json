@@ -1,0 +1,37 @@
+{
+    "name": "nathandentzau/drupal-honeybadger",
+    "description": "Zero-instrumentation, 360 degree coverage of errors, outages and service degradation.",
+    "type": "drupal-module",
+    "license": "MIT",
+    "homepage": "https://github.com/nathandentzau/honeybadger",
+    "support": {
+        "email": "nathan@dentzau.com",
+        "issues": "https://github.com/nathandentzau/honeybadger/issues",
+        "source": "https://github.com/nathandentzau/honeybadger"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.3",
+        "drupal/core": "^8.8 || ^9.0",
+        "honeybadger-io/honeybadger-php": "^2.0"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "drupal/coder": "^8.3",
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Drupal\\honeybadger\\": "src/"
+        }
+    },
+    "scripts": {
+        "phpunit": "phpunit",
+        "phpcs": "phpcs"
+    }
+}

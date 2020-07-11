@@ -1,0 +1,18 @@
+api_key: ~
+environment:
+  filter: []
+  include: []
+request:
+  filter: []
+version: ~
+hostname: ~
+project_root: ~
+environment_name: ~
+handlers:
+  exception: true
+  error: true
+client:
+  timeout: 0
+  proxy: []
+excluded_exceptions: []
+report_data: true

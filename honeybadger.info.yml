@@ -1,0 +1,5 @@
+name: Honeybadger
+description: Zero-instrumentation, 360 degree coverage of errors, outages and service degradation.
+type: module
+core_version_requirement: ^8.8 || ^9.0
+package: Logging

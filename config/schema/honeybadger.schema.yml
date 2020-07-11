@@ -1,0 +1,58 @@
+honeybadger.settings:
+  type: config_object
+  label: Honeybadger Settings
+  mapping:
+    api_key:
+      type: string
+      label: API Key
+    environment:
+      type: mapping
+      mapping:
+        filter:
+          type: sequence
+          label: Environment Filters
+        include:
+          type: sequence
+          label: Environment Includes
+    request:
+      type: mapping
+      mapping:
+        filter:
+          type: sequence
+          label: Request Filter
+    version:
+      type: string
+      label: Version
+    hostname:
+      type: string
+      label: Hostname
+    project_root:
+      type: string
+      label: Project Root
+    environment_name:
+      type: string
+      label: Environment Name
+    handlers:
+      type: mapping
+      mapping:
+        exception:
+          type: boolean
+          label: Exception Handler
+        error:
+          type: boolean
+          label: Error Handler
+    client:
+      type: mapping
+      mapping:
+        timeout:
+          type: integer
+          label: Client Timeout
+        proxy:
+          type: sequence
+          label: Client Proxy
+    excluded_exceptions:
+      type: sequence
+      label: Excluded Exceptions
+    report_data:
+      type: boolean
+      label: Report Data
