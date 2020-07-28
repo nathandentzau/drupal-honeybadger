@@ -41,7 +41,7 @@ final class HoneybadgerFactory {
    *   The honeybadger service.
    */
   public function create(array $config = []): Reporter {
-    $config = array_merge($config, $this->getConfig()->getRawData());
+    $config = array_merge($config, $this->getConfig()->getOriginal($key = '', $apply_overrides = TRUE));
     return Honeybadger::new($config);
   }
 

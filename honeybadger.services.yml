@@ -3,3 +3,8 @@ services:
     arguments: ['@config.factory', '@request_stack']
   Honeybadger\Honeybadger:
     factory: ['@Drupal\honeybadger\HoneybadgerFactory', create]
+  logger.honeybadger:
+    class: Drupal\honeybadger\Logger\HoneybadgerLog
+    arguments: ['@Honeybadger\Honeybadger']
+    tags:
+      - { name: logger }
