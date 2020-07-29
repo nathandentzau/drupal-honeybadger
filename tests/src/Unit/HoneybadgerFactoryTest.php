@@ -37,7 +37,7 @@ class HoneybadgerFactoryTest extends UnitTestCase {
   public function testCreate(): void {
     $this->config
       ->expects($this->once())
-      ->method('getRawData')
+      ->method('get')
       ->willReturn([]);
 
     $this->assertInstanceOf(
