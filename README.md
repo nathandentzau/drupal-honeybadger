@@ -4,8 +4,8 @@ This is a [Honeybadger][] integration module for Drupal.
 
 ## Requirements
 
-* PHP `^7.3`
-* Drupal `^8.7 || ^9.0`
+* PHP `^7.3 || ^8.0`
+* Drupal `^8.7 || ^9.0 || ^10`
 
 ## Installation
 
